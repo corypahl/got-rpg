@@ -1,0 +1,93 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Private S3 sync service for The Maester's Ledger
+
+Parameters:
+  SyncToken:
+    Type: String
+    NoEcho: true
+    MinLength: 20
+    Description: A long personal passphrase used by the companion site.
+  AllowedOrigin:
+    Type: String
+    Default: https://corypahl.github.io
+    Description: The GitHub Pages origin, without a trailing slash or repository path.
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    Timeout: 10
+    MemorySize: 256
+    Architectures: [arm64]
+
+Resources:
+  LedgerBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      VersioningConfiguration:
+        Status: Enabled
+      CorsConfiguration:
+        CorsRules:
+          - AllowedOrigins: [!Ref AllowedOrigin]
+            AllowedMethods: [PUT, HEAD]
+            AllowedHeaders: ['*']
+            MaxAge: 600
+
+  LedgerApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins: [!Ref AllowedOrigin]
+        AllowHeaders: [authorization, content-type]
+        AllowMethods: [GET, PUT, POST, OPTIONS]
+        MaxAge: 600
+
+  LedgerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: api/
+      Handler: index.handler
+      Environment:
+        Variables:
+          BUCKET_NAME: !Ref LedgerBucket
+          SYNC_TOKEN: !Ref SyncToken
+          ALLOWED_ORIGIN: !Ref AllowedOrigin
+      Policies:
+        - S3CrudPolicy:
+            BucketName: !Ref LedgerBucket
+      Events:
+        GetState:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref LedgerApi
+            Path: /state
+            Method: GET
+        PutState:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref LedgerApi
+            Path: /state
+            Method: PUT
+        CreateUploadUrl:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref LedgerApi
+            Path: /upload-url
+            Method: POST
+
+Outputs:
+  SyncApiUrl:
+    Description: Paste this URL into the companion site's Settings page.
+    Value: !Sub https://${LedgerApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}
+  BucketName:
+    Description: Private bucket containing the ledger and roster screenshots.
+    Value: !Ref LedgerBucket

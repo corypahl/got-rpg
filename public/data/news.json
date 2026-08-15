@@ -1,0 +1,151 @@
+{
+  "updatedAt": "2026-08-15T02:13:46.065Z",
+  "sourceUrl": "https://www.gameofthroneslegends.com/news",
+  "items": [
+    {
+      "title": "New Champion: Tyland Lannister",
+      "date": "2026-08-12T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/new-champion-tyland-lannister",
+      "category": "Champion",
+      "summary": "A new champion enters the roster with an overview of their skills, synergies, and best battle modes."
+    },
+    {
+      "title": "What We're Focusing On - August 2026",
+      "date": "2026-08-03T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/what-were-focusing-on-august-2026",
+      "category": "Community",
+      "summary": "A development dispatch with strategy, design insight, and news from behind the battle lines."
+    },
+    {
+      "title": "August 2026 Event Calendar",
+      "date": "2026-07-31T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar",
+      "category": "Event",
+      "summary": "Review the latest official schedule, featured rewards, and limited-time activities."
+    },
+    {
+      "title": "New Champion: Viserys I Targaryen",
+      "date": "2026-07-28T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/new-champion-viserys-i-targaryen",
+      "category": "Champion",
+      "summary": "A new champion enters the roster with an overview of their skills, synergies, and best battle modes."
+    },
+    {
+      "title": "Designing The Dragons - Part 2!",
+      "date": "2026-07-22T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/designing-the-dragons-part-2",
+      "category": "Community",
+      "summary": "A development dispatch with strategy, design insight, and news from behind the battle lines."
+    },
+    {
+      "title": "Release 1.0.563 Patch Notes",
+      "date": "2026-07-23T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/release-1-0-563-patch-notes",
+      "category": "Patch notes",
+      "summary": "Read the latest feature updates, balance changes, fixes, and quality-of-life improvements."
+    },
+    {
+      "title": "Designing The Dragons!",
+      "date": "2026-07-20T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/alliance-bosses-reimagined-designing-the-dragons",
+      "category": "Community",
+      "summary": "A development dispatch with strategy, design insight, and news from behind the battle lines."
+    },
+    {
+      "title": "Kingsroad Season: Jorah The Andal",
+      "date": "2026-07-20T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/kingsroad-season-jorah-the-andal",
+      "category": "Event",
+      "summary": "Review the latest official schedule, featured rewards, and limited-time activities."
+    },
+    {
+      "title": "New Champion: Ser Gwayne Hightower",
+      "date": "2026-07-15T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/new-champion-ser-gwayne-hightower",
+      "category": "Champion",
+      "summary": "A new champion enters the roster with an overview of their skills, synergies, and best battle modes."
+    }
+  ],
+  "events": [
+    {
+      "title": "Kingsroad: Jorah the Andal",
+      "type": "Season",
+      "startsAt": "2026-07-20T03:00:00-04:00",
+      "endsAt": "2026-08-17T02:00:00-04:00",
+      "featured": "Goldroad rewards include Legendary Jorah Mormont shards.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "Legacy of Old Valyria",
+      "type": "Summon",
+      "startsAt": "2026-07-29T04:00:00-04:00",
+      "endsAt": "2026-08-26T02:00:00-04:00",
+      "featured": "Viserys I, Alicent, Drogon, Daenerys, Viserys III, and Meleys.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "The Royal Treasury",
+      "type": "Summon",
+      "startsAt": "2026-08-12T04:00:00-04:00",
+      "endsAt": "2026-09-09T02:00:00-04:00",
+      "featured": "Tyland Lannister and the leading champions of the Greens.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-tyland-lannister"
+    },
+    {
+      "title": "Battle of Blackwater Bay",
+      "type": "Quest",
+      "startsAt": "2026-08-13T04:00:00-04:00",
+      "endsAt": "2026-08-17T02:00:00-04:00",
+      "featured": "The Blackwater Summon features Davos, Daario, Tyrion, and the Night King.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "Kingsroad: Raven's Choice",
+      "type": "Season",
+      "startsAt": "2026-08-17T03:00:00-04:00",
+      "endsAt": "2026-09-14T02:00:00-04:00",
+      "featured": "The Goldroad Pass includes Legendary Bran Stark shards.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "PvP Rewards: Corlys Velaryon",
+      "type": "PvP",
+      "startsAt": "2026-08-17T14:00:00-04:00",
+      "endsAt": "2026-09-13T14:00:00-04:00",
+      "featured": "Climb the tiers to earn Corlys Velaryon shards.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "Assault on Rook's Rest",
+      "type": "Quest",
+      "startsAt": "2026-08-20T04:00:00-04:00",
+      "endsAt": "2026-08-24T02:00:00-04:00",
+      "featured": "Oberyn, Sunfyre, Tywin, and Gregor feature in the accompanying summon.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "Legend Trial: Into the North",
+      "type": "Trial",
+      "startsAt": "2026-08-23T04:00:00-04:00",
+      "endsAt": "2026-09-02T04:00:00-04:00",
+      "featured": "Complete trial levels to earn Legendary Night King shards.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "True Knight",
+      "type": "Summon",
+      "startsAt": "2026-08-26T04:00:00-04:00",
+      "endsAt": "2026-09-23T02:00:00-04:00",
+      "featured": "Brienne, Sansa, Arya, Ned, Catelyn, and Jon Snow.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    },
+    {
+      "title": "Robb's War",
+      "type": "Quest",
+      "startsAt": "2026-08-27T04:00:00-04:00",
+      "endsAt": "2026-08-31T02:00:00-04:00",
+      "featured": "Robb Stark leads the featured champions in the event summon.",
+      "sourceUrl": "https://www.gameofthroneslegends.com/news/august-2026-event-calendar"
+    }
+  ]
+}
