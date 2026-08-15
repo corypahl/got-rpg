@@ -1,4 +1,4 @@
-name: Deploy companion to GitHub Pages
+name: Deploy Maester's Index to GitHub Pages
 
 on:
   push:

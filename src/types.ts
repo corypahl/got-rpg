@@ -1,51 +1,58 @@
-export type GemColor = 'red' | 'blue' | 'green' | 'yellow' | 'purple'
-export type Rarity = 'Common' | 'Rare' | 'Epic' | 'Legendary'
-export type ChampionRole = 'Damage' | 'Tank' | 'Support' | 'Strategist' | 'Healer'
+export type GemColor = 'red' | 'blue' | 'green' | 'gold' | 'purple'
+export type Rarity = 'Legendary' | 'Epic' | 'Common'
+export type ChampionTier = 'S' | 'A' | 'B' | 'Unranked'
+export type ChampionRole = 'Fighter' | 'Protector' | 'Strategist' | 'Mender' | 'Marksman' | 'Beast'
 
 export interface Champion {
   id: string
   name: string
-  level: number
-  stars: number
-  power: number
-  shards: number
+  title?: string
   rarity: Rarity
   color: GemColor
+  factions: string[]
   role: ChampionRole
-  faction: string
-  isFavorite: boolean
-  updatedAt: string
+  keywords: string[]
+  tier: ChampionTier
+  verified: boolean
+  sourceUrl?: string
 }
 
-export interface Team {
+export type TeamMode = 'Meta' | 'Crown Challenge' | 'Raid Offense' | 'Raid Defense' | 'Legendary Assault'
+export type EvidenceLevel = 'Official lineup' | 'Official-tested core' | 'Community meta' | 'Mechanic-based'
+
+export interface StrategyTeam {
   id: string
   name: string
-  mode: 'Campaign' | 'Raids' | 'PvP' | 'Alliance Wars' | 'Events'
+  mode: TeamMode
+  target: string
   championIds: string[]
-  leaderId: string | null
-  notes: string
+  leaderId: string
+  tier: 'S' | 'A' | 'Specialist'
+  evidence: EvidenceLevel
+  summary: string
+  playbook: string[]
+  sourceLabel: string
+  sourceUrl: string
   updatedAt: string
 }
 
-export interface ActivityItem {
+export interface CrownRegion {
   id: string
-  kind: 'import' | 'edit' | 'team' | 'sync'
-  message: string
-  createdAt: string
+  name: string
+  days: number[]
+  factions: string[]
+  teamId: string
+  accent: GemColor
 }
 
-export interface AppData {
-  schemaVersion: 1
-  houseName: string
-  roster: Champion[]
-  teams: Team[]
-  activity: ActivityItem[]
-  updatedAt: string
-}
-
-export interface SyncSettings {
-  apiUrl: string
-  accessToken: string
+export interface ReleaseRadarItem {
+  id: string
+  championId?: string
+  name: string
+  status: 'Announced' | 'Teased' | 'New release'
+  eta: string
+  detail: string
+  sourceUrl: string
 }
 
 export interface NewsItem {

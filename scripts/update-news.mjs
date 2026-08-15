@@ -35,7 +35,7 @@ function parseDate(text) {
   return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString()
 }
 
-const response = await fetch(SOURCE_URL, { headers: { 'user-agent': 'maesters-ledger-news-bot/1.0' } })
+const response = await fetch(SOURCE_URL, { headers: { 'user-agent': 'maesters-index-news-bot/1.0' } })
 if (!response.ok) throw new Error(`News request failed: ${response.status}`)
 const html = await response.text()
 const existing = JSON.parse(await readFile(DATA_PATH, 'utf8'))
