@@ -10,7 +10,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",
-    "news:update": "node scripts/update-news.mjs"
+    "news:update": "node scripts/update-news.mjs",
+    "images:update": "node scripts/update-champion-images.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.31.0",

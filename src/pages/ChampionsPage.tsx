@@ -85,7 +85,7 @@ function ChampionDetail({ champion, onClose }: { champion: Champion | null; onCl
         <section><span className="eyebrow">Strategic mechanics</span><div className="detail-tags detail-tags--mechanic">{champion.keywords.map((item) => <span key={item}>{item}</span>)}</div></section>
         <section><div className="detail-section-heading"><div><span className="eyebrow">Formation usage</span><h3>{usedBy.length ? `${usedBy.length} indexed teams` : 'No featured team yet'}</h3></div><Swords size={18} /></div>{usedBy.map((team) => <Link to={`/teams?team=${team.id}`} className="detail-team-link" key={team.id} onClick={onClose}><span className={`tier-mark tier-mark--${team.tier.toLowerCase()}`}>{team.tier}</span><div><strong>{team.name}</strong><small>{team.mode} · {team.target}</small></div><ArrowUpRight size={15} /></Link>)}</section>
         {events.length > 0 && <section><span className="eyebrow">Currently featured</span>{events.map((event) => <Link to="/events" className="detail-event-link" key={event.title} onClick={onClose}><strong>{event.title}</strong><span>{event.type}</span></Link>)}</section>}
-        <footer>{champion.verified ? <><CheckCircle2 size={14} /> Appears in official game coverage</> : <><Shield size={14} /> Community-indexed roster entry</>}</footer>
+        <footer>{champion.verified ? <><CheckCircle2 size={14} /> {champion.imageUrl ? 'Portrait sourced from official game coverage' : 'Appears in official game coverage'}{champion.sourceUrl && <a href={champion.sourceUrl} target="_blank" rel="noreferrer">View source <ArrowUpRight size={12} /></a>}</> : <><Shield size={14} /> Community-indexed roster entry</>}</footer>
       </div>
     </div>
   </Modal>

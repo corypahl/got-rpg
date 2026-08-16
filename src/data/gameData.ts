@@ -1,4 +1,5 @@
 import type { Champion, ChampionRole, ChampionTier, CrownRegion, GemColor, Rarity, ReleaseRadarItem, StrategyTeam } from '../types'
+import officialImages from './officialImages.json'
 
 const OFFICIAL = 'https://www.gameofthroneslegends.com/news'
 
@@ -189,19 +190,31 @@ const seeds: ChampionSeed[] = [
   ['wilding-spearwife', 'Wildling Spearwife', 'Huntress of the Frozen North', 'Common', 'blue', 'Free Folk', 'Fighter', 'Raid|Critical', 'Unranked'],
 ]
 
-export const champions: Champion[] = seeds.map(([id, name, title, rarity, color, factions, role, keywords, tier = 'Unranked', verified = false]) => ({
-  id,
-  name,
-  ...(title ? { title } : {}),
-  rarity,
-  color,
-  factions: factions.split('|'),
-  role,
-  keywords: keywords.split('|'),
-  tier,
-  verified,
-  ...(verified ? { sourceUrl: OFFICIAL } : {}),
-}))
+const officialImageById = officialImages as Record<string, { sourceUrl: string; assetUrl: string; alt: string; version: string; objectPosition?: string }>
+
+export const champions: Champion[] = seeds.map(([id, name, title, rarity, color, factions, role, keywords, tier = 'Unranked', verified = false]) => {
+  const officialImage = officialImageById[id]
+  return {
+    id,
+    name,
+    ...(title ? { title } : {}),
+    rarity,
+    color,
+    factions: factions.split('|'),
+    role,
+    keywords: keywords.split('|'),
+    tier,
+    verified,
+    ...(officialImage ? {
+      sourceUrl: officialImage.sourceUrl,
+      imageUrl: `champions/${id}.webp?v=${officialImage.version}`,
+      imageAlt: officialImage.alt,
+      ...(officialImage.objectPosition ? { imagePosition: officialImage.objectPosition } : {}),
+    } : verified ? { sourceUrl: OFFICIAL } : {}),
+  }
+})
+
+export const officialPortraitCount = Object.keys(officialImageById).length
 
 export const championById = new Map(champions.map((champion) => [champion.id, champion]))
 

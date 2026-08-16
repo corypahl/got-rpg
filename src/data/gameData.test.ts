@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { championById, champions, crownRegions, eventChampionMap, releaseRadar, teamById, teams } from './gameData'
+import { championById, champions, crownRegions, eventChampionMap, officialPortraitCount, releaseRadar, teamById, teams } from './gameData'
 
 describe('strategy index data', () => {
   it('contains a full-sized champion index with unique ids', () => {
@@ -24,5 +24,13 @@ describe('strategy index data', () => {
     for (const release of releaseRadar) {
       if (release.championId) expect(championById.has(release.championId), release.championId).toBe(true)
     }
+  })
+
+  it('maps every official portrait to a sourced champion', () => {
+    const illustrated = champions.filter((champion) => champion.imageUrl)
+    expect(officialPortraitCount).toBeGreaterThanOrEqual(20)
+    expect(illustrated).toHaveLength(officialPortraitCount)
+    expect(new Set(illustrated.map((champion) => champion.imageUrl)).size).toBe(officialPortraitCount)
+    for (const champion of illustrated) expect(champion.sourceUrl).toMatch(/^https:\/\/www\.gameofthroneslegends\.com\/news\//)
   })
 })

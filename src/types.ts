@@ -15,6 +15,9 @@ export interface Champion {
   tier: ChampionTier
   verified: boolean
   sourceUrl?: string
+  imageUrl?: string
+  imageAlt?: string
+  imagePosition?: string
 }
 
 export type TeamMode = 'Meta' | 'Crown Challenge' | 'Raid Offense' | 'Raid Defense' | 'Legendary Assault'

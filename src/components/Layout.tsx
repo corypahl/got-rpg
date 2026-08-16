@@ -42,6 +42,7 @@ export function Layout({ children }: { children: ReactNode }) {
         </div>
         <div className="sidebar__footer">
           <a className="nav-item" href="https://www.gameofthroneslegends.com/news" target="_blank" rel="noreferrer"><BookOpenText size={19} strokeWidth={1.7} /><span>Official news</span></a>
+          <p className="legal-notice">Unofficial fansite. Trademarks are the property of their respective owners. Game content and materials © Zynga Inc. All rights reserved.</p>
         </div>
       </aside>
       {mobileOpen && <button className="sidebar-scrim" aria-label="Close navigation" onClick={() => setMobileOpen(false)} />}

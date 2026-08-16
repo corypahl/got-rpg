@@ -1,0 +1,135 @@
+{
+  "tyland-lannister": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-tyland-lannister",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/4YGgCIPKQH1oG07UFBnkzs/7998fa089f50fc022cf77e68d7ff4ae0/TL_001_BlogPost__1_.jpg",
+    "alt": "TL 001 BlogPost",
+    "version": "532cf07a01"
+  },
+  "viserys-i": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-viserys-i-targaryen",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/oxei2n8PJ5FXYNgg7eNE0/4f9d59eeeed7af0f0fbe0a4a410204ac/Viserys_001_BlogPost_01.jpg",
+    "alt": "Viserys 001 BlogPost 01",
+    "version": "6f09c7dbf5"
+  },
+  "ser-gwayne": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-ser-gwayne-hightower",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/1iINZ8ENRvV7cdxbfdTMrp/814e867b8f7b340375991b41526a35bd/Gwyane_Hightower_BlogPost_Single.jpg",
+    "alt": "Gwyane Hightower BlogPost Single",
+    "version": "a23f086141"
+  },
+  "daemon-targaryen": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-daemon-targaryen",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/vAiEKrOXyK1rvOdUy8MQ3/7da9a325aaa4c3aa79cab7258874e65c/Daemon_Targaryen_001_BlogPost.jpg",
+    "alt": "Daemon Targaryen 001 BlogPost",
+    "version": "0e171c5ff9",
+    "objectPosition": "60% center"
+  },
+  "seasmoke": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-seasmoke",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/3cpquzzvjdQPKRxuhJH9um/a25cdfc104973734f18b785fa12e5014/Seasmoke_001_BlogPost.jpg",
+    "alt": "Seasmoke 001 BlogPost",
+    "version": "4c4fc672ca"
+  },
+  "oberyn-martell": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-oberyn-martell",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/24rNzlO6pXTOCOHtrUj4M2/5f70e9b87e44a6366cd45d701814e0eb/Oberyn_Martell_001_NewChamp.jpg",
+    "alt": "Oberyn Martell 001 NewChamp",
+    "version": "943b68ca0d"
+  },
+  "mance-rayder": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-mance-rayder",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/2unCDSyZbwAH0mRARgZXU5/72211602458b96aa4c7050077b1ce69c/Mance_Rayder_001_BlogPost__1_.jpg",
+    "alt": "Mance Rayder 001 BlogPost (1)",
+    "version": "3f687c1ae0"
+  },
+  "nymeria-sand": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-nymeria-sand",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/4NefynpW418t6n894A50V1/53ebde4046ac08cec8628e4da51ce71d/NymeriaSand_001_BlogPost_NewChamp.jpg",
+    "alt": "NymeriaSand 001 BlogPost NewChamp",
+    "version": "7d3da9dd21"
+  },
+  "olenna-tyrell": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-olenna-tyrell",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/3tzuPcYNON3YeiwwxRjNPx/7a9060004a5cddeee2135df3f9c115e0/Olenna_Tyrell_001_BlogPost_NewChamp.jpg",
+    "alt": "Olenna Tyrell 001 BlogPost NewChamp",
+    "version": "1ef5a11744"
+  },
+  "tywin-lannister": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-tywin-lannister",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/3INHPZ4V4WgBbFwMjcRrEc/e97ea1ecf448a0d4705fbd997cd70302/TywinLannister_001_BlogPost_NewChamp__1_.jpg",
+    "alt": "TywinLannister 001 BlogPost NewChamp (1)",
+    "version": "b3b564b4ab"
+  },
+  "jaqen-hghar": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-jaqen-hghar",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/f2ZKC090yUihemGgD0orD/018ad174f50dfc2872d52080f3159198/JaqenHghar_001_BlogPost_NewChamp.jpg",
+    "alt": "JaqenHghar 001 BlogPost NewChamp",
+    "version": "1883dd60c8"
+  },
+  "osha": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-osha",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/evjiyHTljjX55IG5oUzQ3/c7d574e6c6417f9dfedb799174796e70/Osha001_BlogPost.jpg",
+    "alt": "Osha001 BlogPost",
+    "version": "d2b7b6243f"
+  },
+  "egg": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-egg",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/7C4yUo4lYs72BB2NE98L7G/f6eab490ccfac0076219425986a5f383/Egg001_NewChamp.jpg",
+    "alt": "Egg001 NewChamp",
+    "version": "be7ea9dc5c"
+  },
+  "jacaerys-velaryon": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-jacaerys-velaryon",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/5hrKWZbvmAWicfuIPlrLeU/91527006dcd1957495118d3339567d5f/Jacaerys001_BlogPost_Solo__1_.jpg",
+    "alt": "Jacaerys001 BlogPost Solo",
+    "version": "99cf44c5f2"
+  },
+  "ser-duncan": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-ser-duncan-the-tall",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/5Bq6R49gCObdWqaDVrzTFR/6243ff5285d3fc1ba40934f1924df9a3/Dunk_NewChamp.jpg",
+    "alt": "Dunk NewChamp",
+    "version": "46bdb4d297"
+  },
+  "bran-stark": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-bran-stark",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/1roJSNiISO4rG3cPnHXs2I/6b4e5982a0840bfa62e2a18ecc452dc4/BranStark_001_BlogPost_Solo.jpg",
+    "alt": "BranStark 001 BlogPost Solo",
+    "version": "16debb305a"
+  },
+  "night-king": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-the-night-king",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/2CcZj1bc61uYjFYBNPlPJe/dd7cda21e6258aca8089dd4aa89ee932/NightKing_001_BlogPost.jpg",
+    "alt": "NightKing 001 BlogPost",
+    "version": "1b9ce599e0"
+  },
+  "corlys-velaryon": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-corlys-velaryon",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/2ADVbGhHhnyHoyvDtYm6mE/e5d419f6180e09678753541d552736ba/Corlys_NewChamp.jpg",
+    "alt": "Corlys NewChamp",
+    "version": "11efe4e68e"
+  },
+  "laenor-velaryon": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-laenor-velaryon",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/OMUOYlO52fjP9WyNV2eoI/112aad29665d597ba3f14b77b22f6184/Laenor_NewChamp.jpg",
+    "alt": "Laenor NewChamp",
+    "version": "29e2676aba"
+  },
+  "gregor-clegane": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-gregor-clegane",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/6TAUFGVARLVGVX0aTYdD8p/f0fc344ab06258173663ee39aafdb280/Gregor_001_BlogPost_NewChamp.jpg",
+    "alt": "Gregor 001 BlogPost NewChamp",
+    "version": "9bbe02d515"
+  },
+  "rhaenyra-black-queen": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-blacks-champion-rhaenyra-targaryen-the-black-queen",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/5rnyGlDSALgUQEP3CGGqbs/c9e85d2fc7d6dd625a88aa95554161c0/NewChamp_Banner__1_.jpg",
+    "alt": "Game of Thrones Legends Rhaenyra NewChamp Banner",
+    "version": "830c3dda73"
+  },
+  "cersei-seven-kingdoms": {
+    "sourceUrl": "https://www.gameofthroneslegends.com/news/new-champion-cersei-lannister-queen-of-the-seven-kingdoms",
+    "assetUrl": "https://images.ctfassets.net/7qho9llfhoio/1naxv3848Zd9CAT4yYwaFi/510ff227417d47ce3523dbfe87dc3575/Cersei_003_NewChamp.jpg",
+    "alt": "Cersei 003 NewChamp",
+    "version": "09621023a1"
+  }
+}

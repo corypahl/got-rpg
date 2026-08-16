@@ -9,6 +9,7 @@ This is an unofficial fan project. Game of Thrones, Game of Thrones: Legends, an
 ## Included
 
 - Searchable champion index with variant, rarity, gem color, faction, role, mechanic, and strategy-tier filters
+- Face-focused champion portraits pulled from official news artwork, with a sigil fallback when official art is unavailable
 - Champion detail views that connect each character to indexed teams and active or upcoming events
 - Mode-specific team library for meta play, Crown Challenge, Raid Offense, Raid Defense, and Legendary Assault
 - Evidence labels that distinguish official five-unit lineups, official-tested cores, community meta, and mechanic-based recommendations
@@ -55,7 +56,11 @@ Hash routing and a relative Vite asset base make the same production build work 
 
 The champion index is maintained in [`src/data/gameData.ts`](src/data/gameData.ts). The initial roster baseline comes from the community-maintained Game of Thrones: Legends Wiki and is supplemented by official champion announcements. Unverified entries are explicitly identified as community-indexed in the UI.
 
+Official portrait metadata is generated in [`src/data/officialImages.json`](src/data/officialImages.json), with optimized WebP files stored in [`public/champions`](public/champions). Run `npm run images:update` to re-read mapped champion announcements, select the main champion artwork, and request a face-focused crop from the official Contentful image service. New announcement URLs require an explicit champion mapping in [`scripts/update-champion-images.mjs`](scripts/update-champion-images.mjs), preventing an unrelated news image from being silently attached to a roster entry.
+
 Team recommendations always include an evidence level and source. “Official lineup” means the game team published all five positions together. “Official-tested core” means official design notes named key champions. Community and mechanic-based formations are useful starting points, not claims of official win-rate data.
+
+The site follows [Zynga's fansite guidelines](https://www.zynga.com/legal/fansite-guidelines), identifies itself as unofficial, links portraits to their source announcement, and includes the requested game-content notice. Keep the project noncommercial and retain those notices when reusing the site.
 
 Event dates live in [`public/data/news.json`](public/data/news.json) so ambiguous natural-language schedules are never guessed at runtime. [`scripts/update-news.mjs`](scripts/update-news.mjs) refreshes only official headlines.
 
