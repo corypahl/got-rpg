@@ -1,7 +1,14 @@
 {
-  "updatedAt": "2026-08-15T02:13:46.065Z",
+  "updatedAt": "2026-08-17T10:52:21.376Z",
   "sourceUrl": "https://www.gameofthroneslegends.com/news",
   "items": [
+    {
+      "title": "Kingsroad Season: Raven’s Choice",
+      "date": "2026-08-17T16:00:00.000Z",
+      "url": "https://www.gameofthroneslegends.com/news/kingsroad-season-ravens-choice",
+      "category": "Event",
+      "summary": "Review the latest official schedule, featured rewards, and limited-time activities."
+    },
     {
       "title": "New Champion: Tyland Lannister",
       "date": "2026-08-12T16:00:00.000Z",
@@ -57,13 +64,6 @@
       "url": "https://www.gameofthroneslegends.com/news/kingsroad-season-jorah-the-andal",
       "category": "Event",
       "summary": "Review the latest official schedule, featured rewards, and limited-time activities."
-    },
-    {
-      "title": "New Champion: Ser Gwayne Hightower",
-      "date": "2026-07-15T16:00:00.000Z",
-      "url": "https://www.gameofthroneslegends.com/news/new-champion-ser-gwayne-hightower",
-      "category": "Champion",
-      "summary": "A new champion enters the roster with an overview of their skills, synergies, and best battle modes."
     }
   ],
   "events": [
