@@ -60,6 +60,8 @@ Official portrait metadata is generated in [`src/data/officialImages.json`](src/
 
 Team recommendations always include an evidence level and source. “Official lineup” means the game team published all five positions together. “Official-tested core” means official design notes named key champions. Community and mechanic-based formations are useful starting points, not claims of official win-rate data.
 
+Player-specific progress is stored separately from the public index under the versioned `maesters-index:player-roster` local-storage key. [`src/lib/playerRoster.ts`](src/lib/playerRoster.ts) owns validation, [the current official star-based level caps](https://zyngasupport.helpshift.com/hc/en/124-game-of-thrones-legends/faq/22141-release-1-0-451-patch-notes/), sparse persistence, and forward migration boundaries; [`src/hooks/usePlayerRoster.ts`](src/hooks/usePlayerRoster.ts) provides the React subscription layer and cross-tab refresh behavior. No personal roster data leaves the browser.
+
 The site follows [Zynga's fansite guidelines](https://www.zynga.com/legal/fansite-guidelines), identifies itself as unofficial, links portraits to their source announcement, and includes the requested game-content notice. Keep the project noncommercial and retain those notices when reusing the site.
 
 Event dates live in [`public/data/news.json`](public/data/news.json) so ambiguous natural-language schedules are never guessed at runtime. [`scripts/update-news.mjs`](scripts/update-news.mjs) refreshes only official headlines.

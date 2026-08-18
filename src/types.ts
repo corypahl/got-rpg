@@ -2,6 +2,7 @@ export type GemColor = 'red' | 'blue' | 'green' | 'gold' | 'purple'
 export type Rarity = 'Legendary' | 'Epic' | 'Common'
 export type ChampionTier = 'S' | 'A' | 'B' | 'Unranked'
 export type ChampionRole = 'Fighter' | 'Protector' | 'Strategist' | 'Mender' | 'Marksman' | 'Beast'
+export type ChampionStarRank = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
 
 export interface Champion {
   id: string
@@ -18,6 +19,33 @@ export interface Champion {
   imageUrl?: string
   imageAlt?: string
   imagePosition?: string
+}
+
+export interface PlayerChampion {
+  championId: string
+  unlocked: boolean
+  stars: ChampionStarRank
+  currentLevel: number
+  shardsTowardNextStar: number
+  currentPower: number
+  iconicUnlocked: boolean
+  iconicLevel: number
+  skillLevels?: Record<string, number>
+  notes?: string
+  favorite?: boolean
+}
+
+export interface PlayerRoster {
+  schemaVersion: 1
+  updatedAt: string
+  champions: Record<string, PlayerChampion>
+}
+
+export interface PlayerChampionProgress {
+  levelCap: number
+  levelsAvailable: number
+  isLevelCapped: boolean
+  canLevel: boolean
 }
 
 export type TeamMode = 'Meta' | 'Crown Challenge' | 'Raid Offense' | 'Raid Defense' | 'Legendary Assault'
